@@ -1,0 +1,3 @@
+alembic init app\migrations
+alembic revision --autogenerate -m "initial migration"
+alembic upgrade head

@@ -13,7 +13,7 @@ class User(Base):
     age = Column(Integer)
     slug = Column(String, unique=True, index=True)
 
-    task = relationship("Task", back_populates="users")
+    tasks = relationship("Task", back_populates="users")
 
 from sqlalchemy.schema import CreateTable
 print(CreateTable(User.__table__))
